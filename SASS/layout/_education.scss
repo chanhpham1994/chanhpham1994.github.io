@@ -1,0 +1,78 @@
+.education{
+    background-color: $color-black-3;
+    padding: 50px 0;
+    color: $color-white-0;
+    h1{
+        transition: all 1s;
+        &:hover{
+            cursor: pointer;
+            color: $color-orange-0;
+        }
+        @include head-text('LEARNING',160px,16%);
+    }
+    .timeline{
+        cursor: pointer;
+        position: relative;
+        h2{
+            color: $color-gray-0;
+        }
+        &::before{
+            content: "";
+            display: block;
+            width: 2px;
+            height: 800px;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            background: $color-gray-0; 
+        }
+        .timeline-right{
+            padding-left: 100px;
+            &::before{
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 20px;
+                left: -8.5px;
+                border-radius: 50%;
+                background: #fff; 
+            }
+            &:hover{
+                h2{
+                    transition: all 1.5s;
+                    color: $color-orange-0;
+                }
+                &::before{
+                    transition: all 1.5s;
+                    background: $color-orange-0;
+                }
+            }
+        }
+        .timeline-left{
+            padding-right: 100px;
+            &::before{
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 20px;
+                right: -11.5px;
+                border-radius: 50%;
+                background: #fff; 
+            }
+            &:hover{
+                h2{
+                    transition: all 1.5s;
+                    color: $color-orange-0;
+                }
+                &::before{
+                    transition: all 1.5s;
+                    background: $color-orange-0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.propject{
+    background-color: $color-black-3;
+    padding: 20px 0;
+    color: $color-white-0;
+    h1{
+        transition: all 1s;
+        &:hover{
+            cursor: pointer;
+            color: $color-orange-0;
+        }
+        @include head-text('PROJECT',120px,12%);
+    }
+    .project--img{
+       img{
+        width: 350px;
+        height: 600px;
+       }
+    }
+}

@@ -1,0 +1,18 @@
+.skill{
+    background-color: $color-black-3;
+    padding: 20px 0;
+    color: $color-white-0;
+    h1{
+        transition: all 1s;
+        &:hover{
+            cursor: pointer;
+            color: $color-orange-0;
+        }
+        @include head-text('EXPERT IN',125px,13%);
+    }
+    
+}
+svg{
+    width:65%;
+    margin: 65px;
+}

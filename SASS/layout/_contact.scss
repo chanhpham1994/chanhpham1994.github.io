@@ -1,0 +1,39 @@
+.contact{
+    background-color: $color-black-3;
+    padding: 20px 0;
+    color: $color-white-0;
+    h1{
+        transition: all 1s;
+        &:hover{
+            cursor: pointer;
+            color: $color-orange-0;
+        }
+        @include head-text('CONTACT US',100px,10%);
+    }
+    .contact--content{
+        label{
+            padding: 10px 0;
+        }
+        textarea{
+            height: 120px;
+        }
+    }
+    .contact--img{
+        img{
+            width: 540px;
+            height: 350px;
+        }
+    }
+    .contact--icon{
+        margin: 50px 0;
+        .contact--phone{
+            @include background('../IMG/phone--call.jpg',);
+        }
+        .contact-email{
+            @include background('../IMG/mail.jpg',);
+        }
+        .contact--address{
+            @include background('../IMG/building.jpg',);
+        }
+    }
+}

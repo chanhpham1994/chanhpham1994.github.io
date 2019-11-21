@@ -1,0 +1,29 @@
+.header{
+    .header--nav{
+        background-color: $color-black-3;
+        .header--logo{
+            font-size: $fs-2;
+            color: $color-orange-0;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: "Kaushan Script", cursive;
+        }
+        .header--nav__text{
+            ul{
+                li{
+                    a{
+                        color: $color-white-0;
+                        font-weight: $fw-bold-0;
+                        letter-spacing: 2px;
+                        padding: 10px;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: $color-orange-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

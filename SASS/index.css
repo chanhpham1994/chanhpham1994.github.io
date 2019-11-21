@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+
+.header .header--nav {
+  background-color: #000000; }
+  .header .header--nav .header--logo {
+    font-size: 24px;
+    color: #f74f12;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Kaushan Script", cursive; }
+  .header .header--nav .header--nav__text ul li a {
+    color: #FFFFFF;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px;
+    transition: all 0.5s; }
+    .header .header--nav .header--nav__text ul li a:hover {
+      color: #f74f12; }
+
+.information {
+  background-image: url("../../IMG/infor_bg.jpg");
+  height: 1000px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  /* DEMO-SPECIFIC STYLES */
+  /* The typing effect */
+  /* The typewriter cursor effect */ }
+  .information .infor--text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 60%;
+    color: #FFFFFF; }
+  .information .typewriter h1 {
+    padding-bottom: 10px;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; }
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
+.education {
+  background-color: #000000;
+  padding: 50px 0;
+  color: #FFFFFF; }
+  .education h1 {
+    transition: all 1s;
+    position: relative;
+    margin-bottom: 35px; }
+    .education h1:hover {
+      cursor: pointer;
+      color: #f74f12; }
+    .education h1::before {
+      content: '';
+      display: block;
+      width: 160px;
+      height: 2px;
+      position: absolute;
+      color: white;
+      background-color: #FFFFFF;
+      top: 55px; }
+    .education h1::after {
+      content: "LEARNING";
+      width: 100px;
+      height: 2px;
+      position: absolute;
+      color: #f74f12;
+      font-size: 12px;
+      top: 50px;
+      left: 16%; }
+  .education .timeline {
+    cursor: pointer;
+    position: relative; }
+    .education .timeline h2 {
+      color: #616161; }
+    .education .timeline::before {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 800px;
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      background: #616161; }
+    .education .timeline .timeline-right {
+      padding-left: 100px; }
+      .education .timeline .timeline-right::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        left: -8.5px;
+        border-radius: 50%;
+        background: #fff; }
+      .education .timeline .timeline-right:hover h2 {
+        transition: all 1.5s;
+        color: #f74f12; }
+      .education .timeline .timeline-right:hover::before {
+        transition: all 1.5s;
+        background: #f74f12; }
+    .education .timeline .timeline-left {
+      padding-right: 100px; }
+      .education .timeline .timeline-left::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        right: -11.5px;
+        border-radius: 50%;
+        background: #fff; }
+      .education .timeline .timeline-left:hover h2 {
+        transition: all 1.5s;
+        color: #f74f12; }
+      .education .timeline .timeline-left:hover::before {
+        transition: all 1.5s;
+        background: #f74f12; }
+
+.skill {
+  background-color: #000000;
+  padding: 20px 0;
+  color: #FFFFFF; }
+  .skill h1 {
+    transition: all 1s;
+    position: relative;
+    margin-bottom: 35px; }
+    .skill h1:hover {
+      cursor: pointer;
+      color: #f74f12; }
+    .skill h1::before {
+      content: '';
+      display: block;
+      width: 125px;
+      height: 2px;
+      position: absolute;
+      color: white;
+      background-color: #FFFFFF;
+      top: 55px; }
+    .skill h1::after {
+      content: "EXPERT IN";
+      width: 100px;
+      height: 2px;
+      position: absolute;
+      color: #f74f12;
+      font-size: 12px;
+      top: 50px;
+      left: 13%; }
+
+svg {
+  width: 65%;
+  margin: 65px; }
+
+.propject {
+  background-color: #000000;
+  padding: 20px 0;
+  color: #FFFFFF; }
+  .propject h1 {
+    transition: all 1s;
+    position: relative;
+    margin-bottom: 35px; }
+    .propject h1:hover {
+      cursor: pointer;
+      color: #f74f12; }
+    .propject h1::before {
+      content: '';
+      display: block;
+      width: 120px;
+      height: 2px;
+      position: absolute;
+      color: white;
+      background-color: #FFFFFF;
+      top: 55px; }
+    .propject h1::after {
+      content: "PROJECT";
+      width: 100px;
+      height: 2px;
+      position: absolute;
+      color: #f74f12;
+      font-size: 12px;
+      top: 50px;
+      left: 12%; }
+  .propject .project--img img {
+    width: 350px;
+    height: 600px; }
+
+.work--experience {
+  background-color: #000000;
+  padding: 20px 0;
+  color: #FFFFFF; }
+  .work--experience h1 {
+    transition: all 1s;
+    position: relative;
+    margin-bottom: 35px; }
+    .work--experience h1:hover {
+      cursor: pointer;
+      color: #f74f12; }
+    .work--experience h1::before {
+      content: '';
+      display: block;
+      width: 310px;
+      height: 2px;
+      position: absolute;
+      color: white;
+      background-color: #FFFFFF;
+      top: 55px; }
+    .work--experience h1::after {
+      content: "EXPERIENCE";
+      width: 100px;
+      height: 2px;
+      position: absolute;
+      color: #f74f12;
+      font-size: 12px;
+      top: 50px;
+      left: 29%; }
+  .work--experience .work--experience__timecard {
+    color: #333333;
+    position: relative;
+    cursor: pointer; }
+    .work--experience .work--experience__timecard img {
+      height: 250px; }
+    .work--experience .work--experience__timecard .content {
+      position: absolute;
+      width: 348px;
+      top: 0%;
+      color: #FFFFFF;
+      z-index: 0; }
+    .work--experience .work--experience__timecard .logistic, .work--experience .work--experience__timecard .windsor, .work--experience .work--experience__timecard .reeracoen {
+      transition: all 2s;
+      z-index: 1; }
+      .work--experience .work--experience__timecard .logistic:hover, .work--experience .work--experience__timecard .windsor:hover, .work--experience .work--experience__timecard .reeracoen:hover {
+        opacity: 0; }
+
+.contact {
+  background-color: #000000;
+  padding: 20px 0;
+  color: #FFFFFF; }
+  .contact h1 {
+    transition: all 1s;
+    position: relative;
+    margin-bottom: 35px; }
+    .contact h1:hover {
+      cursor: pointer;
+      color: #f74f12; }
+    .contact h1::before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 2px;
+      position: absolute;
+      color: white;
+      background-color: #FFFFFF;
+      top: 55px; }
+    .contact h1::after {
+      content: "CONTACT US";
+      width: 100px;
+      height: 2px;
+      position: absolute;
+      color: #f74f12;
+      font-size: 12px;
+      top: 50px;
+      left: 10%; }
+  .contact .contact--content label {
+    padding: 10px 0; }
+  .contact .contact--content textarea {
+    height: 120px; }
+  .contact .contact--img img {
+    width: 540px;
+    height: 350px; }
+  .contact .contact--icon {
+    margin: 50px 0; }
+    .contact .contact--icon .contact--phone {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG/phone--call.jpg");
+      height: 200px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      padding: 0 15px;
+      transition: all 1s; }
+      .contact .contact--icon .contact--phone:hover {
+        font-size: 19px;
+        cursor: pointer; }
+    .contact .contact--icon .contact-email {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG/mail.jpg");
+      height: 200px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      padding: 0 15px;
+      transition: all 1s; }
+      .contact .contact--icon .contact-email:hover {
+        font-size: 19px;
+        cursor: pointer; }
+    .contact .contact--icon .contact--address {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG/building.jpg");
+      height: 200px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      padding: 0 15px;
+      transition: all 1s; }
+      .contact .contact--icon .contact--address:hover {
+        font-size: 19px;
+        cursor: pointer; }
+
+.footer {
+  text-align: center;
+  background-color: #616161;
+  color: #FFFFFF;
+  padding: 5px 0; }
+
+/*# sourceMappingURL=index.css.map */

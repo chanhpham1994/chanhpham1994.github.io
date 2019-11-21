@@ -1,0 +1,47 @@
+@mixin background($url){
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url($url);
+    height: 200px;
+    width: 100%;
+    background-position: center ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white-0;
+    font-size: $fs-1;
+    font-weight: $fw-bold-1;
+    text-align: center;
+    padding: 0 15px;
+    transition: all 1s;
+    &:hover{
+        font-size: $fs-1 + 3;
+        cursor: pointer;
+    }
+}
+
+@mixin head-text($text,$width,$left){
+    position: relative;
+    margin-bottom: 35px;
+    &::before{
+        content: '';
+        display: block;
+        width: $width;
+        height: 2px;
+        position: absolute;
+        color: white;
+        background-color: #FFFFFF;
+        top: 55px;
+    }
+    &::after{
+        content: $text;
+        width: 100px;
+        height: 2px;
+        position: absolute;
+        color: $color-orange-0;
+        font-size: 12px;
+        top: 50px;
+        left: $left;
+    }
+
+
+}
